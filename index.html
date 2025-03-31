@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário - 3 Meses</title>
+    <style>
+        .calendario-header {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            width: 310px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .calendario-container {
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            margin-top: 50px;
+        }
+
+        .calendario {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+        .calendario-dias {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            background-color: #f1f1f1;
+            padding: 5px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            border-right: 1px;
+        }
+
+        .calendario-dias div {
+            padding: 9px;
+            text-align: center;
+            font-weight: bold;
+            background-color:lightgrey;
+        }
+
+        .calendario-dias .dia {
+            cursor: pointer;
+        }
+
+        #feriado{
+            background-color: yellow;
+        }
+        #descricao-feriado{
+            background-color: yellow;
+        }
+        #aula-infinity{
+            background-color: red;
+        }
+        #descricao-quintas{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calendario-container">
+        <div class="calendario">
+            <div class="calendario-header">
+                <h3>Abril/2025</h3>
+            </div>
+            <div class="calendario-dias">
+                <div>Dom</div>
+                <div>Seg</div>
+                <div>Ter</div>
+                <div>Qua</div>
+                <div>Qui</div>
+                <div>Sex</div>
+                <div>Sáb</div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class="dia">1</div>
+                <div class="dia">2</div>
+                <div id="aula-infinity" class="dia">3</div>
+                <div class="dia">4</div>
+                <div class="dia">5</div>
+                <div class="dia">6</div>
+                <div class="dia">7</div>
+                <div class="dia">8</div>
+                <div class="dia">9</div>
+                <div id="aula-infinity" class="dia">10</div>
+                <div class="dia">11</div>
+                <div class="dia">12</div>
+                <div class="dia">13</div>
+                <div class="dia">14</div>
+                <div class="dia">15</div>
+                <div class="dia">16</div>
+                <div id="aula-infinity" class="dia">17</div>
+                <div class="dia" id="feriado">18</div>
+                <div class="dia">19</div>
+                <div class="dia">20</div>
+                <div class="dia" id="feriado">21</div>
+                <div class="dia">22</div>
+                <div class="dia">23</div>
+                <div id="aula-infinity" class="dia">24</div>
+                <div class="dia">25</div>
+                <div class="dia">26</div>
+                <div class="dia">27</div>
+                <div class="dia">28</div>
+                <div class="dia">29</div>
+                <div class="dia">30</div>
+            </div>
+            <p id="descricao-feriado"><b>Dia 18 - Sexta-feira Santa</b></p>
+            <p id="descricao-feriado"><b>Dia 21 - Dia de Tiradentes </b></p>
+            <p id="descricao-quintas"><b>QUI - Aula na Infinity School</b></p>
+        </div>
+    <section>
+        <div class="calendario">
+            <div class="calendario-header">
+                <h3>Maio/2025</h3>
+            </div>
+            <div class="calendario-dias">
+                <div>Dom</div>
+                <div>Seg</div>
+                <div>Ter</div>
+                <div>Qua</div>
+                <div>Qui</div>
+                <div>Sex</div>
+                <div>Sáb</div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class="dia" id="feriado">1</div>
+                <div class="dia">2</div>
+                <div class="dia">3</div>
+                <div class="dia">4</div>
+                <div class="dia">5</div>
+                <div class="dia">6</div>
+                <div class="dia">7</div>
+                <div id="aula-infinity" class="dia">8</div>
+                <div class="dia">9</div>
+                <div class="dia">10</div>
+                <div class="dia">11</div>
+                <div class="dia">12</div>
+                <div class="dia">13</div>
+                <div class="dia">14</div>
+                <div id="aula-infinity" class="dia">15</div>
+                <div class="dia">16</div>
+                <div class="dia">17</div>
+                <div class="dia">18</div>
+                <div class="dia">19</div>
+                <div class="dia">20</div>
+                <div class="dia">21</div>
+                <div id="aula-infinity" class="dia">22</div>
+                <div class="dia">23</div>
+                <div class="dia">24</div>
+                <div class="dia">25</div>
+                <div class="dia">26</div>
+                <div class="dia">27</div>
+                <div class="dia">28</div>
+                <div id="aula-infinity" class="dia">29</div>
+                <div class="dia">30</div>
+            </div>
+        <p id="descricao-feriado"><b>Dia 1 - Dia do trabalhador</b></p>
+        <p id="descricao-quintas"><b>QUI - Aula na Infinity School</b></p>
+        </div>
+    </section>
+    <section>
+        
+        <div class="calendario">
+            <div class="calendario-header">
+                <h3>Junho/2025</h3>
+            </div>
+            <div class="calendario-dias">
+                <div>Dom</div>
+                <div>Seg</div>
+                <div>Ter</div>
+                <div>Qua</div>
+                <div>Qui</div>
+                <div>Sex</div>
+                <div>Sáb</div>
+                <div class="dia">1</div>
+                <div class="dia">2</div>
+                <div class="dia">3</div>
+                <div class="dia">4</div>
+                <div id="aula-infinity" class="dia">5</div>
+                <div class="dia">6</div>
+                <div class="dia">7</div>
+                <div class="dia">8</div>
+                <div class="dia">9</div>
+                <div class="dia">10</div>
+                <div class="dia">11</div>
+                <div id="aula-infinity" class="dia">12</div>
+                <div class="dia">13</div>
+                <div class="dia">14</div>
+                <div class="dia">15</div>
+                <div class="dia">16</div>
+                <div class="dia">17</div>
+                <div class="dia">18</div>
+                <div class="dia" id="feriado">19</div>
+                <div class="dia">20</div>
+                <div class="dia">21</div>
+                <div class="dia">22</div>
+                <div class="dia">23</div>
+                <div class="dia">24</div>
+                <div class="dia">25</div>
+                <div id="aula-infinity" class="dia">26</div>
+                <div class="dia">27</div>
+                <div class="dia">28</div>
+                <div class="dia">29</div>
+                <div class="dia">30</div>
+            </div>
+        <p id="descricao-feriado"><b>Dia 19 - Corpus Christi</b></p>
+        <p id="descricao-quintas"><b>QUI - Aula na Infinity School</b></p>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
